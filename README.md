@@ -1,15 +1,29 @@
 # flutter_macos_widget
 
-A new Flutter plugin project.
+Flutter Library for macOS WidgetKit and Widget Communication
 
-## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## 💡 Usage
+### 1. Flutter
+```dart
+import 'package:flutter_macos_widget/flutter_macos_widget.dart';
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+final widgetKit = FlutterMacosWidget("appGroup");
+
+
+// use "UseDefaults" to communicate with Widget
+widgetKit.set("key", "value")
+widgetKit.get("key")
+widgetKit.remove("key")
+
+// force reload macOS widget
+FlutterMacosWidget.reloadAllTimelines();
+FlutterMacosWidget.reloadTimelines("ofKind");
+```
+### 2. Swift
+```swift
+let value = UserDefaults(suiteName: "appGroup")!.string(forKey: "key")
+```
+
 
