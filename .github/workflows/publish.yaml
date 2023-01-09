@@ -15,5 +15,4 @@ jobs:
         with:
           accessToken: ${{ secrets.ACCESS_TOKEN }}
           refreshToken: ${{ secrets.REFRESH_TOKEN }}
-          relativePath: "../../"
           
