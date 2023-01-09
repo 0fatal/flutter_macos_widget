@@ -1,1 +1,16 @@
+name: publish
 
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dart and Flutter Package Publisher
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          accessToken: ${{ secrets.ACCESS_TOKEN }}
+          refreshToken: ${{ secrets.REFRESH_TOKEN }}
+          
