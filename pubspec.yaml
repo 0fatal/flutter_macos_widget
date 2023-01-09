@@ -1,6 +1,6 @@
 name: flutter_macos_widget
 description: Develop for macOS app widget.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/0fatal/flutter_macos_widget
 
 environment:
