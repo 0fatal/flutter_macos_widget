@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 Develop for macOS app widget.
                        DESC
-  s.homepage         = 'https://github.com/0xfatal/flutter_macos_widget'
+  s.homepage         = 'https://github.com/0fatal/flutter_macos_widget'
   s.license          = { :file => '../LICENSE' }
   s.author           = { '0fatal' => 'zacharywin233@gmail.com' }
 
